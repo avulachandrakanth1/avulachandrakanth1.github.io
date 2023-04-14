@@ -15,7 +15,6 @@
     arr[12] = "james"
     arr[13] = "jane"
     for(var i =0;i<= arr.length-1; i++){
-        // console.log(arr[i].charAt(0))
         if(arr[i].charAt(0) === 'J' || arr[i].charAt(0) === "j"){
             console.log("Goodbye "+ arr[i])
         }else{
