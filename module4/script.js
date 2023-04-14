@@ -13,12 +13,22 @@
     arr[10] = "Ayush"
     arr[11] = "Nandan"
     arr[12] = "james"
-    arr[13] = "jane"
-    for(var i =0;i<= arr.length-1; i++){
-        if(arr[i].charAt(0) === 'J' || arr[i].charAt(0) === "j"){
-            console.log("Good Bye "+ arr[i])
-        }else{
-            console.log("Hello "+ arr[i])
+    arr[13] = "jane";   
+    helloSpeaker(arr);
+    byeSpeaker(arr)
+ }
+
+ function helloSpeaker(data){
+    for(var i =0;i<= data.length-1; i++){
+        if(!(data[i].charAt(0) == "J" || data[i].charAt(0) == "j")){
+            console.log("Hello "+ data[i])
+        }
+    }
+ }
+ function byeSpeaker(data){
+    for(var i =0;i<= data.length-1; i++){
+        if(data[i].charAt(0) === 'J' || data[i].charAt(0) === "j"){
+            console.log("Good Bye "+ data[i])
         }
     }
  }
